@@ -1,0 +1,14 @@
+
+div {
+    height: 60px;
+    border: 2px dashed black
+}
+
+/*
+1.1 行内元素水平居中
+利用 text-aling:center 可以实现在块级元素内部的行内元素水平居中
+此方法对行内元素(inline),行内块(inline-block),行内表(inline-table),inline-flex元素都有效
+*/
+.center-text {
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .aside {
+    float: left;
+    width: 200px;
+    background-color: pink;
+  }
+  .main {
+    /* 开启BFC，清除左侧浮动的影响 */
+    overflow: hidden;
+    /* 这里不设置宽度也可以 */
+    width: auto;
+    /* 
+    清除了浮动，会将两个子元素处于同一水平线
+    此时不能将宽度设置为100%，会将.main挤压到第二行去 */
+    /* width: 100%; */
+    min-height: 200px;
+    background-color: skyblue;
+  }
+</style>
+<body>
+    <div class="contain">
+        <div class="aside">这是左侧的广告</div>
+        <div class="main">这是右侧的内容</div>
+    </div>
+</body>
+
+
+</html>

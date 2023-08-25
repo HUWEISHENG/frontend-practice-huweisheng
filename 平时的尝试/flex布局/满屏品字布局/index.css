@@ -1,0 +1,34 @@
+.box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .box-item:first-child {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box .box-item:first-child .item {
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.box .box-item:last-child {
+    flex: 1;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.box .box-item:last-child .item {
+    width: 50%;
+    background-color: beige;
+    border: 1px solid black;
+}

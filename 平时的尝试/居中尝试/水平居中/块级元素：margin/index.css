@@ -1,0 +1,15 @@
+div {
+    height: 60px;
+    border: 2px dashed black
+}
+
+/*
+1.2 块级元素水平居中
+首先如果想要设置居中,width是必须设置的,如果不设置width元素,那么块级元素一定会占据100%的宽度,
+margin:0 auto的auto是指平分剩余空间,比如宽度为200,父元素的宽度为1000,那么auto就是指水平方向平分剩余的宽度(1000-200/2)
+*/
+.center-text {
+    width: 100px;
+    /*一定要设置宽度，不然块级元素会占据所有宽度*/
+    margin: 0 auto
+}

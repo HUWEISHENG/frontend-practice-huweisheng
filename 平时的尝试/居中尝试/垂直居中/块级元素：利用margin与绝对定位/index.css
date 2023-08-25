@@ -1,0 +1,23 @@
+/*
+2.1 元素垂直居中
+利用 margin:auto 0与 绝对定位，且设置四方向为0 可以实现在块级元素垂直居中
+*/
+.container {
+    position: relative;
+    height: 60px;
+    border: 2px dashed black
+}
+
+.center-text {
+    position: absolute;
+    /*父元素为第一个非static定位的元素/
+    /*一定要设置宽度，不然块级元素会占据所有宽度*/
+    top: 10px;
+    bottom: 10px;
+    /* left: 10px;
+    right: 10px; */
+    /* margin: auto 0; */
+    height: 20px;
+    width: 20px;
+    background: red;
+}

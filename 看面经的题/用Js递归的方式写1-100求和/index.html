@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+        <script>
+            function add(num1, num2) {
+                if (num1 == 99) return 199;
+                num = num1 + num2;
+                return num + add(num1 + +2, num2 + 2);
+            }
+            console.log(add(1, 2))
+        </script>
+</body>
+
+</html>

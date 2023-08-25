@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        button {
+            width: 210px;
+            height: 50px;
+            border: none;
+            background-color: black;
+            font-size: 23px;
+            font-weight: 500px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            transition: 0.6s;
+            overflow: hidden;
+        }
+
+        button:first-child {
+            color: skyblue;
+            border: 1px solid skyblue;
+            margin: 0 40px;
+        }
+
+        button:last-child {
+            color: pink;
+            border: 1px solid pink;
+        }
+
+        button::before,
+        button::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            height: 100%;
+            filter: blur(30px);
+            opacity: 0.4;
+            transition: 0.6s;
+        }
+
+        button::before {
+            width: 60px;
+            transform: translateX(-90px) skewX(-45deg);
+        }
+
+        button::after {
+            width: 40px;
+            transform: translateX(-90px) skewX(-45deg);
+        }
+
+        button:hover::before,
+        button:hover::after {
+            opacity: 0.6;
+            transform: translateX(220px) skewX(-45deg);
+        }
+
+        button:hover {
+            color: #fff;
+        }
+
+        button:hover:first-child {
+            background-color: skyblue;
+        }
+
+        button:hover:last-child {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button>Hover</button>
+        <button>Hover</button>
+    </div>
+</body>
+
+</html>
